@@ -1,0 +1,41 @@
+{
+  "name": "kidsloop-robot",
+  "version": "1.0.0",
+  "description": "Kidsloop Robot",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "if test \"$NODE_ENV\" = \"production\"; then npm run start:prod; else npm run start:dev; fi",
+    "start:prod": "node --stack_size=20480 -r ts-node/register -r tsconfig-paths/register src",
+    "start:dev": "ts-node-dev --stack_size=20480 -r tsconfig-paths/register --respawn  --poll src",
+    "cli": "node --stack_size=20480 -r ts-node/register -r tsconfig-paths/register src/cli/robot-cli",
+    "jest": "node --stack-size=20480 node_modules/jest/bin/jest.js",
+    "test": "npm run jest -- --coverage",
+    "test:watch": "npm run jest -- --watchAll"
+  },
+  "author": "Alex Shleifman",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.11.10",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.0",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@types/uuid": "^8.3.0",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "uuid": "^8.3.1"
+  }
+}
