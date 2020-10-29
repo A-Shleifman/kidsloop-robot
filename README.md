@@ -39,7 +39,7 @@ You can use a curl command to calculate the number of safe cells (use `localhost
 Create a planet:
 
 ```bash
-curl 'https://kidsloop-robot.optimisedsoftware.co.uk/api/robot?threshold=23' --header 'Content-Type: application/json'
+curl 'https://kidsloop-robot.optimisedsoftware.co.uk/api/robot?threshold=23'
 ```
 
 # Testing
