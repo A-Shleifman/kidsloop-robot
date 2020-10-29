@@ -18,8 +18,6 @@ _Note: Tested with Node version 12._
 
 **The output will be displayed in the system output (terminal).**
 
-The code is tested with jest.
-
 ## REST
 
 The functionality can also be accesed via the REST API using curl/postman/http client.
@@ -43,6 +41,10 @@ Create a planet:
 ```bash
 curl 'https://kidsloop-robot.optimisedsoftware.co.uk/api/robot?threshold=23' --header 'Content-Type: application/json'
 ```
+
+# Testing
+
+The code is tested with jest.
 
 # Things to improve
 
